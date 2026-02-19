@@ -1,0 +1,49 @@
+name: 编译idea-flash APK
+
+# 触发规则：推代码到main分支自动编译 + 手动触发
+on:
+  push:
+    branches: [ main ]  # 可替换为你的分支名（如master）
+  workflow_dispatch:    # 手动触发开关（核心，测试优先用这个）
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest  # 云端编译环境（Ubuntu最稳定）
+    permissions:
+      contents: read        # 读取仓库代码权限
+      actions: write        # 上传产物权限
+
+    steps:
+      # 步骤1：拉取仓库代码到云端服务器
+      - name: 检出仓库代码
+        uses: actions/checkout@v4
+
+      # 步骤2：配置JDK 17（必须，适配Android 14/gradle 8.1.2）
+      - name: 配置JDK 17环境
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'  # 开源JDK发行版，兼容Android构建
+          cache: gradle           # 缓存Gradle依赖，加速后续构建
+
+      # 步骤3：给Gradle脚本添加执行权限（Linux系统必需）
+      - name: 授予Gradlew可执行权限
+        run: chmod +x ./gradlew
+
+      # 步骤4：编译Debug版APK（无签名，可直接测试）
+      - name: 编译Debug APK
+        run: ./gradlew assembleDebug --stacktrace  # 对应项目的gradlew命令
+
+      # 步骤5：编译Release版APK（可选，未签名）
+      - name: 编译Release APK
+        run: ./gradlew assembleRelease --stacktrace
+
+      # 步骤6：上传APK到GitHub Artifacts（可下载）
+      - name: 上传编译产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: idea-flash-apks  # 产物包名（下载时可见）
+          path: |                # 指定要上传的APK路径
+            app/build/outputs/apk/debug/*.apk
+            app/build/outputs/apk/release/*.apk
+          retention-days: 30     # 产物保留30天（到期自动删除）
