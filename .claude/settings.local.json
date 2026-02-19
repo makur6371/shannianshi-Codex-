@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(./gradlew:*)",
+      "Bash(where:*)",
+      "Bash(dir \"C:\\\\Program Files\\\\Android\")",
+      "Bash(dir \"C:\\\\Users$env:USERNAME\\\\AppData\\\\Local\\\\Android\")",
+      "Bash(reg query:*)",
+      "Bash(powershell -Command \"Get-Command java -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Bash(git init:*)",
+      "Bash(git -C \"E:/codex/闪念式\" log:*)",
+      "Bash(find:*)",
+      "Bash(./build-apk.bat:*)",
+      "Bash(./gradlew.bat assembleDebug:*)",
+      "Bash(gradle assembleDebug:*)",
+      "Bash(curl:*)",
+      "Bash(taskkill:*)",
+      "Bash(./gradlew.bat --stop)",
+      "Bash(./gradlew.bat:*)"
+    ]
+  }
+}

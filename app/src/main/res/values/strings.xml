@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">闪念式</string>
+
+    <!-- Main Screen -->
+    <string name="add_idea">添加闪念</string>
+    <string name="idea_hint">输入你的创意想法...</string>
+    <string name="idea_network">闪念网络</string>
+    <string name="settings">设置</string>
+    <string name="about">关于</string>
+
+    <!-- AI Features -->
+    <string name="ai_analyze">AI 分析</string>
+    <string name="ai_connect">AI 连接</string>
+    <string name="ai_extend">AI 延伸</string>
+    <string name="connecting_ai">正在连接AI...</string>
+    <string name="ai_response">AI正在思考中...</string>
+    <string name="ai_thinking">深度思考中...</string>
+
+    <!-- Network View -->
+    <string name="network_title">闪念网络视图</string>
+    <string name="connect_ideas">连接想法</string>
+    <string name="drag_to_connect">拖动想法进行连接</string>
+
+    <!-- Settings -->
+    <string name="settings_title">设置</string>
+    <string name="ai_model">AI模型</string>
+    <string name="select_model">选择模型</string>
+    <string name="api_key">API密钥</string>
+    <string name="base_url">基础URL</string>
+    <string name="theme_color">主题颜色</string>
+    <string name="paper_texture">纸张质感</string>
+    <string name="enable_paper">启用纸张质感</string>
+
+    <!-- About -->
+    <string name="about_title">关于</string>
+    <string name="app_description">随时随地记录你的创意想法</string>
+    <string name="author">作者：Makur</string>
+    <string name="contact">联系QQ：3397023886</string>
+    <string name="github">GitHub：https://github.com/makur6371</string>
+    <string name="version">版本 1.0.0</string>
+
+    <!-- Menu Items -->
+    <string name="menu_settings">设置</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_share">分享</string>
+
+    <!-- Messages -->
+    <string name="idea_saved">闪念已保存</string>
+    <string name="idea_empty">请输入想法内容</string>
+    <string name="ai_error">AI连接失败，请检查设置</string>
+    <string name="network_empty">暂无闪念，添加你的第一个想法吧！</string>
+
+    <!-- Model List -->
+    <string name="model_qwen">Qwen/Qwen2.5-7B-Instruct</string>
+    <string name="model_deepseek">deepseek-R1</string>
+    <string name="model_custom">自定义模型</string>
+</resources>

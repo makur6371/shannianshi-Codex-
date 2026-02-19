@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.IdeaFlash" parent="@android:style/Theme">
+        <!-- Background color -->
+        <item name="android:colorBackground">@color/paper_white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/primary_sky</item>
+
+        <!-- Window background -->
+        <item name="android:windowBackground">@drawable/paper_background</item>
+
+        <!-- Window animations -->
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>

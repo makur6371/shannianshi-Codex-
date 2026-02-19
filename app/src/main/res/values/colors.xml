@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 纯色主题 -->
+    <color name="sky_blue">#87CEEB</color>
+    <color name="tech_blue">#1E88E5</color>
+    <color name="tech_purple">#7C4DFF</color>
+    <color name="orange_yellow">#FFB74D</color>
+    <color name="brown">#8D6E63</color>
+    <color name="ink_grey">#424242</color>
+    <color name="mint_green">#80CBC4</color>
+
+    <!-- 纸张质感相关 -->
+    <color name="paper_white">#FAFAFA</color>
+    <color name="paper_beige">#F5F5DC</color>
+    <color name="paper_shadow">#E0E0E0</color>
+
+    <!-- 主色调 -->
+    <color name="primary_sky">#87CEEB</color>
+    <color name="primary_tech">#1E88E5</color>
+    <color name="primary_purple">#7C4DFF</color>
+    <color name="primary_orange">#FFB74D</color>
+
+    <!-- 文字颜色 -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_tertiary">#BDBDBD</color>
+
+    <!-- 背景颜色 -->
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F5F5DC</color>
+
+    <!-- 状态颜色 -->
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+    <color name="warning">#FF9800</color>
+    <color name="info">#2196F3</color>
+
+    <!-- 阴影颜色 -->
+    <color name="shadow_light">#20000000</color>
+    <color name="shadow_medium">#40000000</color>
+    <color name="shadow_dark">#80000000</color>
+</resources>

@@ -1,0 +1,14 @@
+# 本地配置文件示例
+# 复制此文件为 local.properties 并填入你的实际配置
+
+# 硅基流动API配置
+siliconflow.api.key=sk-your-api-key-here
+siliconflow.base.url=https://api.siliconflow.cn/v1
+siliconflow.default.model=Qwen/Qwen2.5-7B-Instruct
+
+# Firebase配置（如果需要）
+firebase.project.id=your-project-id
+
+# 其他配置
+debug.mode=true
+analytics.enabled=false
